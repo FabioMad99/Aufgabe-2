@@ -61,7 +61,6 @@ BUILD SUCCESSFUL in 1s
 3 actionable tasks: 2 executed, 1 up-to-date
 Configuration cache entry stored.
 ```
-
 3. Da spotless bereits integriert ist, könnte man es mit *gradle spotlessApply* ausführen, jedoch kann man den Default nicht auf 4 Leerzeichen umstellen. Es ist fest definiert und nicht änderbar.
 
 
