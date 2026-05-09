@@ -19,10 +19,6 @@ jobs:
           distribution: temurin
           java-version: 25
 
-      - name: Make gradle executable
-        working-directory: Cat-Cafe
-        run: chmod +x gradlew
-
       - name: Build project
         working-directory: Cat-Cafe
         run: ./gradlew build
