@@ -7,7 +7,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -21,13 +20,17 @@ jobs:
           java-version: 25
 
       - name: Make gradle executable
+        working-directory: Cat-Cafe
         run: chmod +x gradlew
 
       - name: Build project
+        working-directory: Cat-Cafe
         run: ./gradlew build
 
       - name: Run tests
+        working-directory: Cat-Cafe
         run: ./gradlew test
 
       - name: Check formatting
+        working-directory: Cat-Cafe
         run: ./gradlew spotlessCheck
